@@ -20,7 +20,7 @@
  * @author Mehdi Lefebvre <mehdi.lefebvre@gmail.com>
  * @version 0.01
  */
-import play.PlayScala
+//import play.PlayScala
 name := """playsance"""
 
 version := "1.0-SNAPSHOT"
