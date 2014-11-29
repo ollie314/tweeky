@@ -33,10 +33,7 @@ libraryDependencies ++= Seq(
   jdbc,
   anorm,
   cache,
-  ws
-)
-
-val appDependencies = Seq(
-  // Application
+  ws,
+// Application
   "mysql" % "mysql-connector-java" % "5.1.34"
 )
