@@ -1,3 +1,4 @@
+package domain.user
 /**
  * Tweeky nlp program
  *
@@ -20,23 +21,15 @@
  * @author Mehdi Lefebvre <mehdi.lefebvre@gmail.com>
  * @version 0.01
  */
-import play.PlayScala
-name := """playsance"""
 
-version := "1.0-SNAPSHOT"
-
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
-
-scalaVersion := "2.11.1"
-
-libraryDependencies ++= Seq(
-  jdbc,
-  anorm,
-  cache,
-  ws
-)
-
-val appDependencies = Seq(
-  // Application
-  "mysql" % "mysql-connector-java" % "5.1.34"
-)
+/**
+ *
+ * @author Mehdi Lefebvre <mehdi.lefebvre@gmail.com>
+ * @version 0.0.1 
+ * @since 11/29/14 8:57 PM
+ *
+ */
+case class User(val id:Option[Long],
+                val password: String,
+                 val email: String) {
+}
